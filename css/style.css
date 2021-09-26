@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Marcellus", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.75;
+  color: #2A2A2A;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Marcellus", sans-serif;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.75;
+    color: #fff;
+    background-color: #2A2A2A;
+  }
+
+  h1 {
+    font-size: 8rem;
+    top: 45%;
+    margin-bottom: 10rem;
+  }
+
+  .pc-tittle {
+    display: none;
+  }
+}
+header {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  width: 100%;
+  height: 8rem;
+  padding: 2.5rem 2rem 0 2rem;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.logo {
+  font-size: 6rem;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-it {
+  color: white;
+  font-family: "Gabriola";
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.check-it::after {
+  content: "→";
+  margin: 0.8rem 0 0 1rem;
+}
+
+@media (min-width: 769px) {
+  header {
+    height: 15rem;
+    padding: 6rem 0 0 15rem;
+  }
+
+  .logo {
+    font-size: 9rem;
+  }
+
+  .header-box {
+    padding: 0 15rem 0 0;
+  }
+
+  .check-it {
+    font-size: 3.5rem;
+  }
+}
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70rem;
+  background-position: center;
+  background-image: url(../images/sp-top.1.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.horizon-line {
+  position: absolute;
+  bottom: 7rem;
+  left: 50%;
+  width: 5px;
+  height: calc(5rem);
+  background-color: #fff;
+  transform: rotate(-4deg);
+}
+
+.horizon-line::after {
+  position: absolute;
+  display: block;
+  top: 67%;
+  height: 3rem;
+  color: white;
+  border-right: solid 5px;
+  content: "";
+  transform: rotate(54deg) translateY(-48%);
+}
+
+@media (min-width: 769px) {
+  .cover {
+    height: 77rem;
+    background-image: url(../images/pc-top-1.jpg);
+  }
+
+  .horizon-line {
+    bottom: 14rem;
+    left: 50%;
+    width: 5px;
+    height: calc(5rem);
+    background-color: #fff;
+    transform: rotate(-4deg);
+  }
+
+  .horizon-line::after {
+    display: block;
+    top: 67%;
+    height: 3rem;
+    color: white;
+    border-right: solid 5px;
+    content: "";
+    transform: rotate(54deg) translateY(-48%);
+  }
+}
+.block1 {
+  position: absolute;
+  transform: skewY(8deg);
+  transform-origin: top right;
+  width: 100%;
+  height: 8rem;
+  background-color: #fff;
+}
+
+.block2 {
+  position: absolute;
+  transform: skewY(-8deg);
+  transform-origin: left top;
+  width: 100%;
+  height: 5rem;
+  background-color: #A5A0A0;
+  margin: 5rem 0 7rem 0;
+}
+
+.block3 {
+  position: absolute;
+  transform: skewY(8deg);
+  transform-origin: top right;
+  width: 100%;
+  height: 5rem;
+  background-color: #A5A0A0;
+  margin: 5rem 0 7rem 0;
+}
+
+@media (min-width: 769px) {
+  .block1 {
+    transform: skewY(6deg);
+    transform-origin: top right;
+    width: 100%;
+    height: 17rem;
+    background-color: #fff;
+  }
+}
+.main-container {
+  background-color: #2A2A2A;
+}
+
+.container-combo {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-margin {
+  margin-top: 7rem;
+}
+
+.sp-contqainar {
+  -webkit-backface-visibility: hidden;
+  backface-visibilty: hidden;
+}
+
+.container-left {
+  padding: 10rem 1% 3rem 0;
+  text-align: left;
+}
+
+.container-tittle-right {
+  color: #fff;
+  padding: 9rem 0 3rem 1%;
+  text-align: center;
+  max-width: 48%;
+}
+
+.container-right {
+  padding: 10rem 0 3rem 1%;
+  text-align: right;
+}
+
+.container-tittle-left {
+  color: #fff;
+  padding: 9rem 1% 3rem 0;
+  text-align: center;
+  max-width: 48%;
+}
+
+.content-right {
+  justify-content: flex-end;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: "Felix Titling";
+}
+
+.pc-container {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .sp-container {
+    display: none;
+  }
+
+  .pc-container {
+    display: flex;
+    flex-direction: row;
+    padding: 17rem 10rem 7rem 10rem;
+    justify-content: center;
+  }
+
+  .pc-container-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90rem;
+  }
+
+  .center-margin {
+    margin: 0 1%;
+  }
+
+  .pc-text {
+    width: 29rem;
+  }
+
+  h2 {
+    font-size: 4.6rem;
+  }
+
+  .down-container-1 {
+    margin-top: 13rem;
+  }
+
+  .down-container-2 {
+    margin-top: 26rem;
+  }
+
+  .img-height {
+    max-height: 46rem;
+  }
+
+  .box {
+    opacity: 0;
+  }
+
+  .fadeUpTrigger {
+    opacity: 0;
+  }
+
+  .fadeup {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(110px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .delay-time02 {
+    animation-delay: 0.3s;
+  }
+
+  .delay-time04 {
+    animation-delay: 0.6s;
+  }
+
+  .fadecloss {
+    animation-name: fadeslideAnime;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes fadeslideAnime {
+    from {
+      transform: translateX(95rem) translateY(6px);
+    }
+    to {
+      transform: translateX(-100rem) translateY(-6px);
+    }
+  }
+}
+.about-us-box {
+  height: 6rem;
+  width: 100%;
+  background-color: #A5A0A0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-text {
+  font-family: "Felix Titling";
+  font-size: 2.5rem;
+  color: #2A2A2A;
+  padding: 0;
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.about-us-text::after {
+  content: "←";
+  padding: 0 0 0 1rem;
+}
+
+@media (min-width: 769px) {
+  .about-us-box {
+    height: 19rem;
+    transform: skewY(6deg);
+    transform-origin: top right;
+    margin-bottom: 3rem;
+  }
+
+  .about-us-text {
+    font-size: 7.5rem;
+    padding: 0;
+    padding-top: 1rem;
+    margin-: 0;
+  }
+}
+.footer-block {
+  width: 100%;
+  height: 3rem;
+  background-color: #2A2A2A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "HGP明朝E";
+}
+
+@media (min-width: 769px) {
+  .footer-block {
+    height: 4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

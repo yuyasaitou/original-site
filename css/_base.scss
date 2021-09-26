@@ -1,0 +1,56 @@
+//変数
+$white:#fff;
+$gray:#A5A0A0;
+$black:#2A2A2A;
+
+//ベーススタイル
+html{
+ font-size: 62.5%;   
+}
+
+body {
+  font-family: "Marcellus", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.75;
+  color: $black;
+  background-color: $white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    align-items: flex-start;
+}
+
+h1{
+   font-size: 5rem;
+   font-weight: 500;
+   color: $white;
+   font-family: "Marcellus", sans-serif;
+   text-align: center;
+}
+
+@media (min-width: 769px){
+body {
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 1.75;
+  color: $white;
+  background-color: $black;
+}
+
+h1{
+   font-size: 8rem;
+   top: 45%;
+   margin-bottom: 10rem;
+}
+.pc-tittle{
+    display: none;
+}
+}

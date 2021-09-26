@@ -1,0 +1,44 @@
+
+.block1{
+    position: absolute;
+    transform: skewY(8deg);
+    transform-origin: top right;
+    width: 100%;
+    height: 8rem;
+    background-color: $white;
+}
+
+.block2{
+    position: absolute;
+    transform: skewY(-8deg);
+    transform-origin: left top;
+    width: 100%;
+    height: 5rem;
+    background-color: $gray;
+    margin: 5rem 0 7rem 0 ;
+}
+
+.block3{
+    position: absolute;
+    transform: skewY(8deg);
+    transform-origin: top right;
+    width: 100%;
+    height: 5rem;
+    background-color: $gray;
+    margin: 5rem 0 7rem 0;
+}
+
+@media (min-width: 769px){
+.block1{
+    transform: skewY(6deg);
+    transform-origin: top right;
+    width: 100%;
+    height: 17rem;
+    background-color: $white;
+}
+
+
+.block4{
+    
+}
+}

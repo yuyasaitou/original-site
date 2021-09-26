@@ -1,0 +1,49 @@
+header {
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    width: 100%;
+    height: 8rem;
+    padding: 2.5rem 2rem 0 2rem;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.logo{
+    font-size: 6rem ;
+}
+.header-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-it{
+    color:white;
+    font-family: 'Gabriola';
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+.check-it::after{
+    content: "→";
+    margin: 0.8rem 0 0 1rem;
+}
+@media (min-width: 769px){
+header {
+    height: 15rem;
+    padding: 6rem  0 0 15rem;
+}
+
+.logo{
+    font-size: 9rem ;
+}
+
+.header-box{
+    padding: 0 15rem 0 0;
+}
+.check-it{
+    font-size: 3.5rem;
+}
+}

@@ -1,0 +1,58 @@
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70rem;
+    background-position: center;
+    background-image: url(../images/sp-top.1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.horizon-line{
+    position: absolute;
+    bottom: 7rem;
+    left: 50%;
+    width: 5px;
+    height: calc(5rem);
+    background-color: $white;
+    transform: rotate(-4deg)
+}
+.horizon-line::after{  
+position: absolute;
+    display: block;
+    top: 67%;
+    height: 3rem;
+    color: white;
+    border-right: solid 5px;
+    content: "";
+    transform: rotate(54deg) translateY(-48%);
+}
+
+@media (min-width: 769px){
+    
+.cover{
+    height: 77rem;
+    background-image: url(../images/pc-top-1.jpg);
+       
+}
+.horizon-line{
+    bottom: 14rem;
+    left: 50%;
+    width: 5px;
+    height: calc(5rem);
+    background-color: $white;
+    transform: rotate(-4deg)
+}
+.horizon-line::after{ 
+    display: block;
+    top: 67%;
+    height: 3rem;
+    color: white;
+    border-right: solid 5px;
+    content: "";
+    transform: rotate(54deg) translateY(-48%);
+}
+}

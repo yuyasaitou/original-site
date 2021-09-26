@@ -1,0 +1,35 @@
+.about-us-box{
+    height: 6rem;
+    width: 100%;
+    background-color: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-us-text{
+    font-family:'Felix Titling';
+    font-size: 2.5rem;
+    color: $black;
+    padding: 0;
+    padding-top: 1rem;
+    margin: 0
+}
+.about-us-text::after{
+    content: "←";
+    padding: 0 0 0 1rem;
+}
+
+@media (min-width: 769px){
+.about-us-box{
+    height: 19rem;
+    transform: skewY(6deg);
+    transform-origin: top right;
+    margin-bottom: 3rem;
+}
+.about-us-text{
+    font-size: 7.5rem;
+    padding: 0;
+    padding-top: 1rem;
+    margin-: 0;
+}
+}
